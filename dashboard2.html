@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, maximum-scale=1">
+    <meta name="description" content="Modern UI CSS">
+    <meta name="author" content="Sergey Pimenov">
+    <meta name="keywords" content="windows 8, modern style, modern ui, style, modern, css, framework">
+
+    <link href="Metro-UI-CSS/public/css/modern.css" rel="stylesheet">
+    <link href="Metro-UI-CSS/public/css/modern-responsive.css" rel="stylesheet">
+    <link href="Metro-UI-CSS/public/css/site.css" rel="stylesheet" type="text/css">
+    <link href="Metro-UI-CSS/public/js/google-code-prettify/prettify.css" rel="stylesheet" type="text/css">
+
+    <script src="Metro-UI-CSS/public/js/jquery-1.8.2.min.js"></script>
+ 
+    <script src="Metro-UI-CSS/public/js/github.info.js"></script>
+    <script src="Metro-UI-CSS/public/js/tile-slider.js"></script>
+
+    <title>Modern UI CSS</title>
+</head>
+<body class="modern-ui"  >
+    <div class="page secondary with-sidebar"> 
+
+        <div class="page-header">
+            <div class="page-header-content">
+                <h1>My Dashboard<small>demo</small></h1>
+                <a href="/" class="back-button big page-back"></a>
+            </div>
+        </div>
+ <div class="page-sidebar"  > <ul>
+                <li>
+                    <a>Projects</a>
+                    <ul class="sub-menu">
+                        <li><a href="">Currently</a></li>
+                        <li><a href="">Closed</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a>Notes</a>
+                    <ul class="sub-menu">
+                        <li><a href="">Important</a></li>
+                        <li><a href="">Today</a></li>
+                        <li><a href="">Weekly</a></li>
+                        <li><a href="">Monthly</a></li>
+                    </ul>
+                </li>
+
+                <li class="sticker sticker-color-orange"><a href="#"><i class="icon-cart"></i> Shopping</a></li>
+                <li class="sticker sticker-color-orangeDark"><a href="#"><i class="icon-clipboard"></i> Recipes</a></li>
+                <li class="sticker sticker-color-green"><a href="#"><i class="icon-history"></i> Hobbies</a></li>
+                <li class="sticker sticker-color-pink dropdown active" data-role="dropdown">
+                    <a><i class="icon-list"></i> To Do</a>
+                    <ul class="sub-menu light sidebar-dropdown-menu open">
+                        <li><a href="">Today</a></li>
+                        <li><a href="">To Do List</a></li>
+                        <li><a href="">To Do after work</a></li>
+                        <li><a href="">Movies to watch</a></li>
+                    </ul>
+                </li>
+            </ul>
+ </div>
+        <div class="page-region">
+            <div class="page-region-content">
+        <div class="grid">
+                    <div class="row">
+                     
+                        <div class="span12"> 
+
+                <div class="tiles clearfix">
+                    <h3>Examples of tiles made with Metro UI CSS</h3>
+                    <div class="tile image">
+                        <div class="tile-content">
+                            <img src="Metro-UI-CSS/public/images/myface.jpg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="tile icon">
+                        <div class="tile-content">
+                            <img src="Metro-UI-CSS/public/images/Mail128.png"/>
+                        </div>
+                        <div class="brand">
+                            <div class="badge">10</div>
+                            <div class="name">Mail</div>
+                        </div>
+                    </div>
+
+                    <div class="tile bg-color-orangeDark icon selected">
+                        <b class="check"></b>
+                        <div class="tile-content">
+                        <h3>Incidents</h3>
+                            <img src="Metro-UI-CSS/public/images/Video128.png" alt="" />
+                        </div>
+                        <div class="brand">
+                            <span class="name">Video</span>
+                        </div>
+                    </div>
+
+                    <div class="tile double image">
+                        <div class="tile-content">
+                            <img src="Metro-UI-CSS/public/images/5.jpg" alt="" />
+                        </div>
+                        <div class="brand">
+                            <span class="name">Pictures</span>
+                            <div class="badge bg-color-orange">5</div>
+                        </div>
+                    </div>
+
+                    <div class="tile double-vertical bg-color-yellow icon">
+                        <div class="tile-content">
+                            <img src="Metro-UI-CSS/public/images/Calendar128.png" />
+                        </div>
+                        <div class="brand">
+                            <span class="name">Calendar</span>
+                        </div>
+                    </div>
+
+                    <div class="tile bg-color-green icon selected">
+                        <b class="check"></b>
+                        <div class="tile-content">
+                            <img src="Metro-UI-CSS/public/images/Market128.png"/>
+                        </div>
+                        <div class="brand">
+                            <span class="name">Store</span>
+                            <span class="badge">6</span>                           
+                        </div>
+                    </div>
+
+                    <div class="tile bg-color-red icon selected">
+                        <div class="tile-content">
+                            <img src="Metro-UI-CSS/public/images/Music128.png" alt="" />
+                        </div>
+                        <div class="brand">
+                            <span class="name">Music</span>
+                        </div>
+                    </div>
+
+                    <div class="tile double bg-color-blueDark">
+                        <div class="tile-content">
+                            <img src="Metro-UI-CSS/public/images/michael.jpg" class="place-left"/>
+                            <h3 style="margin-bottom: 5px;">michael_angiulo</h3>
+                            <p>
+                                I just saw Thor last night. It was awesome! I think you'd love it.
+                                <h5>RT @julie_green</h5>
+                            </p>
+                        </div>
+                        <div class="brand">
+                            <span class="name">Tweet@rama</span>
+                        </div>
+                    </div>
+
+                    <div class="tile bg-color-darken icon">
+                        <div class="tile-content">
+                            <img src="Metro-UI-CSS/public/images/YouTube128.png" alt="" />
+                        </div>
+                        <div class="brand">
+                            <span class="name">YouTube</span>
+                        </div>
+                    </div>
+
+                    <div class="tile icon">
+                        <div class="tile-content">
+                            <img src="Metro-UI-CSS/public/images/excel2013icon.png"/>
+                        </div>
+                        <div class="brand">
+                            <span class="name">Excel 2013</span>
+                        </div>
+                    </div>
+
+                    <div class="tile double bg-color-green">
+                        <div class="tile-content">
+                            <h2>mattberg@live.com</h2>
+                            <h5>Re: Wedding Annoucement!</h5>
+                            <p>
+                                Congratulations! I'm really excited to celebrate with you all. Thanks for...
+                            </p>
+                        </div>
+                        <div class="brand">
+                            <div class="badge">12</div>
+                            <img class="icon" src="Metro-UI-CSS/public/images/Mail128.png"/>
+                        </div>
+                    </div>
+
+                    <div class="tile double image">
+                        <div class="tile-content">
+                            <img src="Metro-UI-CSS/public/images/4.jpg" alt="" />
+                        </div>
+                        <div class="brand bg-color-orange">
+                            <img class="icon" src="Metro-UI-CSS/public/images/Rss128.png"/>
+                            <p class="text">This is a desert eagle. He is very hungry and angry bird.</p>
+                            <div class="badge">10</div>
+                        </div>
+                    </div>
+
+                    <div class="tile double image-set">
+                        <div class="tile-content">
+                            <img src="Metro-UI-CSS/public/images/1.jpg" alt="">
+                        </div>
+                        <div class="tile-content">
+                            <img src="Metro-UI-CSS/public/images/2.jpg" alt="">
+                        </div>
+                        <div class="tile-content">
+                            <img src="Metro-UI-CSS/public/images/3.jpg" alt="">
+                        </div>
+                        <div class="tile-content">
+                            <img src="Metro-UI-CSS/public/images/4.jpg" alt="">
+                        </div>
+                        <div class="tile-content">
+                            <img src="Metro-UI-CSS/public/images/5.jpg" alt="">
+                        </div>
+                        <div class="brand">
+                            <span class="name">Photos</span>
+                        </div>
+                    </div>
+
+                    <div class="tile bg-color-blue icon">
+                        <div class="tile-content">
+                            <img src="Metro-UI-CSS/public/images/InternetExplorer128.png"/>
+                        </div>
+                        <div class="brand">
+                            <span class="name">Internet Explorer</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            </div>
+            </div>
+                <br />
+                
+
+            </div>
+        </div>
+        <? include("footer.php")?>
+
+    </div>
+    <?php include("counter.php");?>
+
+</body>
+</html>

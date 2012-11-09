@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Sign in &middot; FicsV6 Demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+    <style type="text/css">
+        body {
+            padding-top: 40px;
+            padding-bottom: 40px;
+            background-color: #f5f5f5;
+        }
+
+        #login {
+            margin-left: 0px;
+        }
+
+        .form-signin {
+            max-width: 300px;
+            padding: 19px 19px 29px;
+            margin: 0 auto 20px;
+            background-color: #fff;
+            border: 1px solid #e5e5e5;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
+            -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+            -moz-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+            box-shadow: 0 1px 2px rgba(0,0,0,.05);
+        }
+
+            .form-signin .form-signin-heading,
+            .form-signin .radio {
+                margin-bottom: 10px;
+            }
+
+                .form-signin .form-signin-heading img {
+                    margin: 0 auto 20px;
+                }
+
+            .form-signin input[type="text"],
+            .form-signin input[type="password"] {
+                font-size: 16px;
+                height: auto;
+                margin-bottom: 15px;
+                padding: 7px 9px;
+            }
+
+        #help {
+            margin: 10px auto;
+            text-align: right;
+        }
+
+        #cover {
+            height: 400px;
+        }
+
+        #coverimg {
+            height: 220px;
+        }
+
+        #desmore {
+            padding: 4px 5px;
+            background-color: white;
+        }
+    </style>
+    <link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="shortcut icon" href="bootstrap/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="bootstrap/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="bootstrap/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="bootstrap/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="bootstrap/ico/apple-touch-icon-57-precomposed.png">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="container-fluid">
+            <div class="row-fluid">
+                <div class="span8 hidden-phone" id="cover">
+                    <!--Cover content-->
+                    <div id="coverimg"></div>
+                    <div id="desmore">
+                        <h4>Simplify compliance? Find out <a>more</a>…</h4>
+                    </div>
+                </div>
+                <div id="login" class="span4">
+                    <!--Login content-->
+                    <form class="form-signin">
+                        <h2 class="form-signin-heading">
+                            <img src="http://demov51.fics.com.au/Images/1ficsLogo.png"></h2>
+                        <input type="text" class="input-block-level" placeholder="User Code">
+                        <input type="password" class="input-block-level" placeholder="Password">
+                        <label class="radio inline">
+                            <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                            My Compliance 
+                        </label>
+                        <label class="radio inline">
+                            <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                            Standard Menu
+                        </label>
+                        <div class="row-fluid ">
+                            <div class="span6 offset6">
+                                <button class="btn btn-block btn-large btn-primary" type="submit">Sign in</button>
+                                <div id="help"><a>Need Help?</a></div>
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+                <div class="span10">Copyright © 2003-2012. All Rights Reserved. fiCS™ High Profile Solutions Ltd, Auckland, New Zealand</div>
+                <div class="span1"><a>Feedback</a></div>
+            </div>
+        </div>
+
+
+    </div>
+    <!-- /container -->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="bootstrap/js/jquery.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+
+</body>
+</html>
