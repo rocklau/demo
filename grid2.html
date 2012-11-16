@@ -1,0 +1,314 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Carousel Template &middot; Bootstrap</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+
+    <link href="kendoui/styles/kendo.common.min.css" rel="stylesheet">
+    <link href="kendoui/styles/kendo.default.min.css" rel="stylesheet">
+     <link href="BootstrapForKendoUI/Stylesheets/kendo.bootstrap.min.css" rel="stylesheet">
+    <style>
+
+    /* GLOBAL STYLES
+    -------------------------------------------------- */
+    /* Padding below the footer and lighter body text */
+
+    body {
+      padding: 40px;
+      color: #5a5a5a;
+    } 
+ 
+    /* Featurettes
+    ------------------------- */
+
+    .featurette-divider {
+      margin: 10px 0; /* Space out the Bootstrap <hr> more */
+    }
+    
+     .typeahead{z-index: 1050;}
+    </style>
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="shortcut icon" href="bootstrap/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="bootstrap/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="bootstrap/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="bootstrap/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="bootstrap/ico/apple-touch-icon-57-precomposed.png">
+  </head>
+
+  <body> 
+
+ 
+    
+      <div class="container-fluid">
+  <div class="row-fluid"> 
+    <div class="span12">
+  
+ <ul id="myTab" class="nav nav-tabs">
+              <li class="active"><a href="#home" data-toggle="tab">Product List</a></li>
+              <li><a href="#profile" data-toggle="tab">Profile</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#dropdown1" data-toggle="tab">@fat</a></li>
+                  <li><a href="#dropdown2" data-toggle="tab">@mdo</a></li>
+                </ul>
+              </li>
+            </ul>
+ <div id="myTabContent" class="tab-content">
+              <div class="tab-pane fade in active" id="home">
+
+  <form class="form-horizontal ">  
+      <input type="text" id="inputProductName" placeholder="Product Name">   <button type="submit"   class="btn btn-primary "  >
+        <i class="icon-search icon-white"></i> Search
+      </button>
+
+       
+    <!-- Button to trigger modal -->
+<a href="#myModal" data-toggle="modal"> Advance Options<i class="icon-filter"></i></a>
+ </form>
+  <form class="form-horizontal ">  
+<!-- Modal -->
+<div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h3 id="myModalLabel">Advance Option</h3>
+  </div>
+  <div class="modal-body">
+   
+     
+ <div class="control-group">
+    <label class="control-label"  for="inputProductAdnName"  >Product Name</label>
+    <div class="controls ">
+      
+        <input type="text" id="inputProductAdnName" placeholder="Product Name">   
+     
+              
+    </div>
+       </div>
+         <div class="control-group">
+    <label class="control-label"  for="start"  >Start date</label>
+    <div class="controls ">
+      
+         <input id="start"   value="10/10/2011" /> <br/>
+     
+              
+    </div>
+  </div>  
+    <div class="control-group">
+    <label class="control-label" for="end"  >End date</label>
+    <div class="controls ">
+      
+           <input id="end"   value="10/10/2012" />
+              
+    </div>
+  </div>  
+ <div class="control-group">
+    <label class="control-label" for="location">Location</label>
+    <div class="controls">
+      <input type="text" id="location"  placeholder="Type something…"  style="margin: 0 auto;" data-provide="typeahead" data-items="4" data-source='["Alabama","Alaska","Arizona","Arkansas","California","Colorado","Connecticut","Delaware","Florida","Georgia","Hawaii","Idaho","Illinois","Indiana","Iowa","Kansas","Kentucky","Louisiana","Maine","Maryland","Massachusetts","Michigan","Minnesota","Mississippi","Missouri","Montana","Nebraska","Nevada","New Hampshire","New Jersey","New Mexico","New York","North Dakota","North Carolina","Ohio","Oklahoma","Oregon","Pennsylvania","Rhode Island","South Carolina","South Dakota","Tennessee","Texas","Utah","Vermont","Virginia","Washington","West Virginia","Wisconsin","Wyoming"]'>
+       <span class="help-block">Here input  address.</span>    
+    </div>
+
+  
+    <label class="control-label" for="inputText">Price</label>
+    <div class="controls">
+    <div class="input-append">
+  <input class="span2" id="appendedInput" type="text">
+  <span class="add-on">.00</span>
+</div>
+    </div>
+ 
+   
+  </div>
+  </div>
+  <div class="modal-footer">
+    <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+   <button type="submit"   class="btn btn-primary "  >
+        <i class="icon-search icon-white"></i> Search
+      </button>
+  </div>
+</div>
+ 
+   </form>   
+ 
+    
+
+ 
+ 
+ 
+  <div id="example" class="k-content">
+            <div id="grid"></div> 
+         
+        </div>
+
+    </div>
+     
+              <div class="tab-pane fade" id="profile">
+                <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica VHS salvia yr, vero magna velit sapiente labore stumptown. Vegan fanny pack odio cillum wes anderson 8-bit, sustainable jean shorts beard ut DIY ethical culpa terry richardson biodiesel. Art party scenester stumptown, tumblr butcher vero sint qui sapiente accusamus tattooed echo park.</p>
+              </div>
+              <div class="tab-pane fade" id="dropdown1">
+                <p>Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork. Williamsburg banh mi whatever gluten-free, carles pitchfork biodiesel fixie etsy retro mlkshk vice blog. Scenester cred you probably haven't heard of them, vinyl craft beer blog stumptown. Pitchfork sustainable tofu synth chambray yr.</p>
+              </div>
+              <div class="tab-pane fade" id="dropdown2">
+                <p>Trust fund seitan letterpress, keytar raw denim keffiyeh etsy art party before they sold out master cleanse gluten-free squid scenester freegan cosby sweater. Fanny pack portland seitan DIY, art party locavore wolf cliche high life echo park Austin. Cred vinyl keffiyeh DIY salvia PBR, banh mi before they sold out farm-to-table VHS viral locavore cosby sweater. Lomo wolf viral, mustache readymade thundercats keffiyeh craft beer marfa ethical. Wolf salvia freegan, sartorial keffiyeh echo park vegan.</p>
+              </div>
+            
+  </div>
+</div>  
+
+      
+      <hr class="featurette-divider">
+
+      <!-- /END THE FEATURETTES -->
+
+
+      <!-- FOOTER -->
+      <footer>
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p>&copy; 2012 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+      </footer>
+</div>
+    </div><!-- /.container -->
+
+
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="bootstrap/js/jquery.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+       <script src="kendoui/js/kendo.web.min.js"></script>
+          <script>
+                $(document).ready(function () {
+                    var crudServiceBaseUrl = "http://demos.kendoui.com/service",
+                        dataSource = new kendo.data.DataSource({
+                            transport: {
+                                read:  {
+                                    url: crudServiceBaseUrl + "/Products",
+                                    dataType: "jsonp"
+                                },
+                                update: {
+                                    url: crudServiceBaseUrl + "/Products/Update",
+                                    dataType: "jsonp"
+                                },
+                                destroy: {
+                                    url: crudServiceBaseUrl + "/Products/Destroy",
+                                    dataType: "jsonp"
+                                },
+                                create: {
+                                    url: crudServiceBaseUrl + "/Products/Create",
+                                    dataType: "jsonp"
+                                },
+                                parameterMap: function(options, operation) {
+                                    if (operation !== "read" && options.models) {
+                                        return {models: kendo.stringify(options.models)};
+                                    }
+                                }
+                            },
+                            batch: true,
+                            pageSize: 30,
+                            schema: {
+                                model: {
+                                    id: "ProductID",
+                                    fields: {
+                                        ProductID: { editable: false, nullable: true },
+                                        ProductName: { validation: { required: true } },
+                                        UnitPrice: { type: "number", validation: { required: true, min: 1} },
+                                        Discontinued: { type: "boolean" },
+                                        UnitsInStock: { type: "number", validation: { min: 0, required: true } }
+                                    }
+                                }
+                            }
+                        });
+
+                    $("#grid").kendoGrid({
+                        dataSource: dataSource,
+                        pageable: true,
+                        height: 400,
+                        toolbar: ["create"],
+                        columns: [
+                            "ProductName",
+                            { field: "UnitPrice", title: "Unit Price", format: "{0:c}", width: "150px" },
+                            { field: "UnitsInStock", title:"Units In Stock", width: "150px" },
+                            { field: "Discontinued", width: "100px" },
+                            { command: ["edit", "destroy"], title: "&nbsp;", width: "210px" }],
+                        editable: "inline"
+                    });
+                });
+            </script>
+              <script>
+                $(document).ready(function() {
+                    function startChange() {
+                        var startDate = start.value();
+
+                        if (startDate) {
+                            startDate = new Date(startDate);
+                            startDate.setDate(startDate.getDate() + 1);
+                            end.min(startDate);
+                        }
+                    }
+
+                    function endChange() {
+                        var endDate = end.value();
+
+                        if (endDate) {
+                            endDate = new Date(endDate);
+                            endDate.setDate(endDate.getDate() - 1);
+                            start.max(endDate);
+                        }
+                    }
+
+                    var start = $("#start").kendoDatePicker({
+                        change: startChange
+                    }).data("kendoDatePicker");
+
+                    var end = $("#end").kendoDatePicker({
+                        change: endChange
+                    }).data("kendoDatePicker");
+
+                    start.max(end.value());
+                    end.min(start.value());
+                });
+            </script>
+
+            <style scoped>
+                #example .k-datepicker {
+                    vertical-align: middle;
+                }
+
+                #example h3 {
+                    clear: both;
+                }
+
+                #example .code-sample {
+                    width: 60%;
+                    float:left;
+                    margin-bottom: 20px;
+                }
+
+                #example .output {
+                    width: 24%;
+                    margin-left: 4%;
+                    float:left;
+                }
+            </style>
+  </body>
+</html>
+
+
+
+ 

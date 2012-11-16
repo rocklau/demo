@@ -1,0 +1,845 @@
+
+
+
+
+
+
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Changelog for Kendo UI v2012.2.913</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font: .75em/1.5 Tahoma, sans-serif;
+        }
+
+        h2 {
+            margin: 1em 0 .3em;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: .2em;
+        }
+
+        #page {
+            width: 50em;
+            margin: 0 auto 2em;
+            border-radius: 0 0 1em 1em;
+            box-shadow: 0 0 10px #ccc;
+            padding: 1em 2em 2em;
+        }
+    </style>
+</head>
+<body>
+    <div id="page">
+        <h1>Release notes for Kendo UI v2012.2.913</h1>
+    
+    
+    
+        
+        
+        
+        <h2>Core</h2>
+
+        
+    
+    <h4>What's new</h4>
+    <ul>
+        
+        <li>Allow functions to be used in data attributes during declarative initialization</li>
+        
+    </ul>
+    
+
+        
+    
+
+
+        
+        
+        
+
+        
+        
+        
+        <h3>DataSource</h3>
+
+            
+
+            
+    
+    <h4>What's new</h4>
+    <ul>
+        
+        <li>Add request end event</li>
+        
+    </ul>
+    
+
+            
+    
+    <h4>What's fixed</h4>
+    <ul>
+        
+        <li>DataSource sync does not properly accepts new models</li>
+        
+        <li>Operation descriptors should not be passed to the transport when client operation mode is enabled</li>
+        
+        <li>cancelChanges does not converted nested objects to ObservableObject</li>
+        
+        <li>Values are not converted if external model definition is specified</li>
+        
+        <li>Requests are blocked after custom error is processed during read operation.</li>
+        
+        <li>Nested object are not observable after empty response of CUD operation is received</li>
+        
+        <li>Null values for fields of type string are converted to "null" when remote binding is used</li>
+        
+    </ul>
+    
+
+        
+        
+        
+        <h3>Globalization</h3>
+
+            
+
+            
+    
+    <h4>What's new</h4>
+    <ul>
+        
+        <li>Support for escaping a percent sign in a custom numeric format.</li>
+        
+    </ul>
+    
+
+            
+    
+
+        
+        
+        
+        <h3>HierarchicalDataSource</h3>
+
+            
+
+            
+    
+    <h4>What's new</h4>
+    <ul>
+        
+        <li>Sorting and filtering expressions are applied when loading child datasources</li>
+        
+    </ul>
+    
+
+            
+    
+    <h4>What's fixed</h4>
+    <ul>
+        
+        <li>get method does not find items in child datasources</li>
+        
+        <li>Loading nodes with hasChildren=false queries the child datasource</li>
+        
+    </ul>
+    
+
+        
+        
+        
+        <h3>MVVM</h3>
+
+            
+
+            
+    
+    <h4>What's new</h4>
+    <ul>
+        
+        <li>kendo.init recognizes javascript reference as the role data attribute value</li>
+        
+        <li>role data attribute accepts full namespace as widget identifier</li>
+        
+    </ul>
+    
+
+            
+    
+    <h4>What's fixed</h4>
+    <ul>
+        
+        <li>Parent field is not updated if it is changed from a nested template</li>
+        
+        <li>kendoPager does not support source binding</li>
+        
+        <li>Old event handlers are invoked when the binding has changed</li>
+        
+        <li>Incorrect action type is passed through the change event of the parent object in case item is added to nested array</li>
+        
+    </ul>
+    
+
+        
+        
+        
+        <h3>Validator</h3>
+
+            
+
+            
+    
+    <h4>What's new</h4>
+    <ul>
+        
+        <li>Validator template should not encode the message text</li>
+        
+    </ul>
+    
+
+            
+    
+    <h4>What's fixed</h4>
+    <ul>
+        
+        <li>Disabled input element are validated</li>
+        
+    </ul>
+    
+
+        
+        
+        
+    
+        
+        
+        
+        <h2>Web</h2>
+
+        
+    
+    <h4>What's new</h4>
+    <ul>
+        
+        <li>Introduce DropTargetArea widget - manage live drop targets within an area</li>
+        
+    </ul>
+    
+
+        
+    
+    <h4>What's fixed</h4>
+    <ul>
+        
+        <li>DropTarget drop event is not triggered in IE8 when element inside iframe</li>
+        
+        <li>Multiple kendo.init kendo.bind calls do not unbind previous event handlers</li>
+        
+        <li>FX gets disabled if DataViz is included after Web</li>
+        
+        <li>JavaScript error is thrown when the editor value is bound via MVVM</li>
+        
+        <li>The checked binding does not work as expected with checkbox whose value attribute is set</li>
+        
+        <li>The "value" binding does not work if set before the "source" binding</li>
+        
+    </ul>
+    
+
+
+        
+        
+        
+
+        
+        
+        
+        <h3>AutoComplete</h3>
+
+            
+
+            
+    
+
+            
+    
+    <h4>What's fixed</h4>
+    <ul>
+        
+        <li>Widget does not update the popup's position after rebind</li>
+        
+        <li>Dropdowns should resize according to opening element with percentage width</li>
+        
+        <li>Popup is opened after the widget loses focus</li>
+        
+    </ul>
+    
+
+        
+        
+        
+        <h3>Calendar</h3>
+
+            
+
+            
+    
+
+            
+    
+    <h4>What's fixed</h4>
+    <ul>
+        
+        <li>Widget does not work in mobile device</li>
+        
+    </ul>
+    
+
+        
+        
+        
+        <h3>ComboBox</h3>
+
+            
+
+            
+    
+    <h4>What's new</h4>
+    <ul>
+        
+        <li>Select an item by index/value when populate the datasource of the widget</li>
+        
+    </ul>
+    
+
+            
+    
+    <h4>What's fixed</h4>
+    <ul>
+        
+        <li>Widget does not encode the text of the option element.</li>
+        
+        <li>Widget does not update the popup's position after rebind</li>
+        
+        <li>Cannot enter a custom value if the list of items is re-generated</li>
+        
+        <li>Widget does not open popup element on search</li>
+        
+        <li>Dropdowns should resize according to opening element with percentage width</li>
+        
+        <li>Popup is opened after the widget loses focus</li>
+        
+        <li>Widget does not select the correct item of the child combobox on onload</li>
+        
+        <li>When text property is set and widget is not bound, the change event is raised on blur</li>
+        
+    </ul>
+    
+
+        
+        
+        
+        <h3>DatePicker</h3>
+
+            
+
+            
+    
+    <h4>What's new</h4>
+    <ul>
+        
+        <li>Copy class names of the input element to the widget's wrapper</li>
+        
+    </ul>
+    
+
+            
+    
+    <h4>What's fixed</h4>
+    <ul>
+        
+        <li>Widget does not update the input value when set a valid value with diff format.</li>
+        
+        <li>Widget doesn't work in mobile browser with native HTML5 input support</li>
+        
+        <li>Widget navigates to the next month when the last day of the month is selected.</li>
+        
+        <li>Cannot choose date in IE with browser mode 9 and document mode lower than 9</li>
+        
+        <li>Widget does not work in mobile device</li>
+        
+    </ul>
+    
+
+        
+        
+        
+        <h3>DateTimePicker</h3>
+
+            
+
+            
+    
+    <h4>What's new</h4>
+    <ul>
+        
+        <li>Copy class names of the input element to the widget's wrapper</li>
+        
+    </ul>
+    
+
+            
+    
+    <h4>What's fixed</h4>
+    <ul>
+        
+        <li>Widget does not update the input value when set a valid value with diff format.</li>
+        
+        <li>Widget doesn't work in mobile browser with native HTML5 input support</li>
+        
+        <li>Widget navigates to the next month when the last day of the month is selected.</li>
+        
+        <li>Widget uses an incorrect time format when the options are set with setOptions method</li>
+        
+        <li>Cannot choose date in IE with browser mode 9 and document mode lower than 9</li>
+        
+        <li>Widget does not work in mobile device</li>
+        
+    </ul>
+    
+
+        
+        
+        
+        <h3>DropDownList</h3>
+
+            
+
+            
+    
+    <h4>What's new</h4>
+    <ul>
+        
+        <li>Add focused state style to the DropDownList</li>
+        
+        <li>Select an item by index/value when populate the datasource of the widget</li>
+        
+    </ul>
+    
+
+            
+    
+    <h4>What's fixed</h4>
+    <ul>
+        
+        <li>Widget does not encode the text of the option element.</li>
+        
+        <li>Widget does not update the popup's position after rebind</li>
+        
+        <li>Dropdowns should resize according to opening element with percentage width</li>
+        
+    </ul>
+    
+
+        
+        
+        
+        <h3>Editor</h3>
+
+            
+
+            
+    
+
+            
+    
+    <h4>What's fixed</h4>
+    <ul>
+        
+        <li>Editor nested in window may not work in some cases</li>
+        
+        <li>JavaScript error is thrown in IE8 when pressing enter in an ordered list</li>
+        
+        <li>Editor content is lost after appending content to document.body</li>
+        
+        <li>Executing inline format commands may cause loss of data in IE7/8</li>
+        
+        <li>Editor iframe causes security warning in IE with HTTPS protocol</li>
+        
+        <li>Shift+Enter does not scroll to caret</li>
+        
+    </ul>
+    
+
+        
+        
+        
+        <h3>Grid</h3>
+
+            
+
+            
+    
+    <h4>What's new</h4>
+    <ul>
+        
+        <li>Add support for preventing refresh through cancelling the DataBinding event</li>
+        
+        <li>Grid should not display the string "null" or "undefined" when the cell value is null or undefined</li>
+        
+    </ul>
+    
+
+            
+    
+    <h4>What's fixed</h4>
+    <ul>
+        
+        <li>Filtering on foreign key column which contains literal symbol throws an error</li>
+        
+        <li>Custom validation rules are not executed when Popup edit form template is used</li>
+        
+        <li>Selection does not work with jQuery 1.8.1</li>
+        
+        <li>Cursor is not persisted during column resizing</li>
+        
+        <li>Data is in incorrect order when grouped on a field with same date value and sorted by another.</li>
+        
+        <li>Fix Grid horizontal scrollbar not visible in IE8 in virtual scroll scenarios</li>
+        
+        <li>Footer row cannot be scrolled horizontally after grid is re-bound</li>
+        
+        <li>Clicking cancel in a grid nested in another grid's popup closes the parent popup</li>
+        
+        <li>PageSizes DropDownList is hidden when Grid is populated through the MVVM using a DataSource</li>
+        
+        <li>The new record is not removed after clicking the cancel button of the popup editor</li>
+        
+        <li>Column menu fails to initialize if field of a complex object is specified</li>
+        
+        <li>Error is thrown when setting more then two filters on the same field and filtering is enabled</li>
+        
+        <li>Footer has a scrollbar gap in mobile devices.</li>
+        
+        <li>Column reordering doesn't work properly on command columns</li>
+        
+        <li>Error is thrown when edit form is shown for complex objects in popup and in-line mode</li>
+        
+        <li>Detail template cannot be set as configuration option through MVVM</li>
+        
+        <li>Column menu doesn't work properly when reorder columns</li>
+        
+        <li>Footer is not shown on initial load if autoBind is false </li>
+        
+        <li>IE throws an error when Grid is bound through MVVM and column is sorted if filtering is enabled</li>
+        
+        <li>Popup windows remain in DOM during grid editing</li>
+        
+    </ul>
+    
+
+        
+        
+        
+        <h3>ListView</h3>
+
+            
+
+            
+    
+    <h4>What's new</h4>
+    <ul>
+        
+        <li>Add support for preventing refresh through cancelling the DataBinding event</li>
+        
+    </ul>
+    
+
+            
+    
+    <h4>What's fixed</h4>
+    <ul>
+        
+        <li>ListView refresh throws error in IE8</li>
+        
+    </ul>
+    
+
+        
+        
+        
+        <h3>Menu</h3>
+
+            
+
+            
+    
+
+            
+    
+    <h4>What's fixed</h4>
+    <ul>
+        
+        <li>closeOnClick disables openOnClick temporarily.</li>
+        
+        <li>Widget doesn't work in Chrome for Android</li>
+        
+        <li>openOnClick not reset after closeOnClick</li>
+        
+    </ul>
+    
+
+        
+        
+        
+        <h3>NumericTextBox</h3>
+
+            
+
+            
+    
+    <h4>What's new</h4>
+    <ul>
+        
+        <li>Add focus() method to NumericTextBox</li>
+        
+    </ul>
+    
+
+            
+    
+
+        
+        
+        
+        <h3>PanelBar</h3>
+
+            
+
+            
+    
+
+            
+    
+    <h4>What's fixed</h4>
+    <ul>
+        
+        <li>Clicking on .k-link elements within panelbar content collapses root items</li>
+        
+    </ul>
+    
+
+        
+        
+        
+        <h3>Splitter</h3>
+
+            
+
+            
+    
+
+            
+    
+    <h4>What's fixed</h4>
+    <ul>
+        
+        <li>jQuery UI Draggable does not work in splitter panes</li>
+        
+        <li>Iframes in panes may trap events and restrict resizing</li>
+        
+    </ul>
+    
+
+        
+        
+        
+        <h3>TabStrip</h3>
+
+            
+
+            
+    
+
+            
+    
+    <h4>What's fixed</h4>
+    <ul>
+        
+        <li>Adding dynamic items does not work on iPad</li>
+        
+        <li>Remove method doesn't remove all contents if more than one</li>
+        
+        <li>Refresh method doesn't remove all tabs</li>
+        
+        <li>Removing tabs not functioning properly on touch devices.</li>
+        
+    </ul>
+    
+
+        
+        
+        
+        <h3>TimePicker</h3>
+
+            
+
+            
+    
+    <h4>What's new</h4>
+    <ul>
+        
+        <li>Copy class names of the input element to the widget's wrapper</li>
+        
+    </ul>
+    
+
+            
+    
+    <h4>What's fixed</h4>
+    <ul>
+        
+        <li>Widget doesn't work in mobile browser with native HTML5 input support</li>
+        
+    </ul>
+    
+
+        
+        
+        
+        <h3>TreeView</h3>
+
+            
+
+            
+    
+    <h4>What's new</h4>
+    <ul>
+        
+        <li>Allow template to be set through data-template attribute</li>
+        
+        <li>Introduce simplified checkbox configuration and checkChildren configuration option</li>
+        
+        <li>Introduce setDataSource method that allows dynamic changing of dataSource</li>
+        
+        <li>Checkboxes set the dataItem checked state</li>
+        
+        <li>Introduce dataBound event</li>
+        
+        <li>Improve performance with big data sets</li>
+        
+        <li>Allow nodes to be reloaded by setting the Node loaded flag</li>
+        
+        <li>Initially expanded load-on-demand items are loaded through the datasource</li>
+        
+        <li>text(node, 'text') now updates the text of the given node</li>
+        
+    </ul>
+    
+
+            
+    
+    <h4>What's fixed</h4>
+    <ul>
+        
+        <li>Reloading of subnodes leaves subgroup in faulty state</li>
+        
+        <li>Dropping items over unfetched nodes throws JS error</li>
+        
+        <li>append() method does not work with unfetched nodes</li>
+        
+        <li>Disabled items show wrong toggle arrow indicator</li>
+        
+        <li>Initialization from pre-populated Node hierarchy does not render subnodes</li>
+        
+        <li>Widget doesn't work in Chrome for Android</li>
+        
+        <li>Drag&amp;Drop hover states not removed on touch devices</li>
+        
+        <li>dataXFields do not work with complex getters ("Product.Name")</li>
+        
+        <li>Popup-based widgets are broken when in TreeView template</li>
+        
+        <li>Calling append() with kendo.observable argument throws a JS error</li>
+        
+        <li>Calling `expand()` on load-on-demand nodes has no effect</li>
+        
+        <li>sourceNode event argument in dragEnd event is outside the DOM</li>
+        
+        <li>Updating text field in HierarchicalDataSource does not change node text</li>
+        
+    </ul>
+    
+
+        
+        
+        
+        <h3>Upload</h3>
+
+            
+
+            
+    
+
+            
+    
+    <h4>What's fixed</h4>
+    <ul>
+        
+        <li>Selecting multiple files in Safari/Windows results in failed uploads</li>
+        
+    </ul>
+    
+
+        
+        
+        
+        <h3>Window</h3>
+
+            
+
+            
+    
+    <h4>What's new</h4>
+    <ul>
+        
+        <li>Error event passes error details to event handlers</li>
+        
+        <li>Refresh event is triggered when refreshing static windows</li>
+        
+        <li>Allow refresh() method to render iframe when passing iframe: true</li>
+        
+    </ul>
+    
+
+            
+    
+    <h4>What's fixed</h4>
+    <ul>
+        
+        <li>Minimized windows can be resized after they are moved</li>
+        
+        <li>Initialization always triggers refresh event</li>
+        
+        <li>Inherited window widgets throw a JS error when calling close() or destroy()</li>
+        
+        <li>Make the Window trigger a refresh event when an iframe is used</li>
+        
+    </ul>
+    
+
+        
+        
+        
+        
+        
+    
+    </div>
+</body>
+</html>
